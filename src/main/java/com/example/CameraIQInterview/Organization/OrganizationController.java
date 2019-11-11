@@ -27,6 +27,7 @@ public class OrganizationController {
         return organizationService.findOrganizationByName(name);
     }
 
+    // method to create single organization
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Organization saveOrg(@RequestBody Organization organization){

@@ -13,8 +13,10 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    List<User> findAllUser(){
-        return userRepository.findAll();
+    //List<User> findAllUser(){ return userRepository.findAll(); }
+
+    public List<User> findUserByOrg(String org){
+        return userRepository.findByOrganizationName(org);
     }
 
     public User saveUser(User user) {
