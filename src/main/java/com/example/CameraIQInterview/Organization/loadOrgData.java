@@ -14,19 +14,19 @@ public class loadOrgData implements CommandLineRunner {
 
     public void run(String... args) throws Exception{
 /*
-        Organization o1 = new Organization();
+        User o1 = new User();
         o1.setName("Doglover");
         o1.setAddress("123 santa monica ave");
         o1.setPhone("123-123-1234");
         organizationRepository.save(o1);
 
-        Organization o2 = new Organization();
+        User o2 = new User();
         o2.setName("Catlover");
         o2.setAddress("123 admiralty ave");
         o2.setPhone("321-123-1234");
         organizationRepository.save(o2);
 
-        Organization o3 = new Organization();
+        User o3 = new User();
         o3.setName("Birdlover");
         o3.setAddress("123 keyston st");
         o3.setPhone("123-223-1234");
