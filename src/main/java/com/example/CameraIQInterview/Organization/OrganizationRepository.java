@@ -1,10 +1,11 @@
 package com.example.CameraIQInterview.Organization;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+import java.util.Collection;
 
 @Repository
-public interface OrganizationRepository extends JpaRepository<Organization, Long> {
+public interface OrganizationRepository extends CrudRepository<Organization, Long> {
 
-    public Organization findByName(String name);
+    Collection<Organization> findAll();
 }
